@@ -2,12 +2,15 @@
   "name": "first-vue-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jeromepalayoor.github.io/first-vue-project",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "gh-pages": "^5.0.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
