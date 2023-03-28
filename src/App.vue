@@ -1,6 +1,6 @@
 <template>
   <h1>{{ title }}</h1>
-  <Modal />
+  <Modal header="Sign up now!" text="You can sign up now!"/>
 </template>
 
 <script>
