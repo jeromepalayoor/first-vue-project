@@ -20,6 +20,8 @@ npm run build
 
 ### How to deploy to github pages
 
+Install gh-pages first
+
 ```
 npm i gh-pages --save-dev
 ```
