@@ -1,6 +1,6 @@
 <template>
   <h1>{{ title }}</h1>
-  <teleport to=".modals" v-if="showModal1">
+  <teleport to="#modals" v-if="showModal1">
     <Modal theme="" @close="toggleModal1">
       <h1>Your first Modal!</h1>
       <p>This is your very own Modal text!</p>
@@ -11,7 +11,7 @@
     </Modal>
   </teleport>
   <button @click="toggleModal1">Open Normal Modal</button>
-  <teleport to=".modals" v-if="showModal2">
+  <teleport to="#modals" v-if="showModal2">
     <Modal theme="sale" @close="toggleModal2">
       <h1>Your second Modal!</h1>
       <p>This is your very own second Modal text!</p>
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style>
-#app, .modals{
+#app, #modals{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
